@@ -1,0 +1,235 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+header {
+  background-color: #333;
+  overflow: hidden;
+}
+
+header h1 {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  margin: 0;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    font-size: 12px;
+  }
+}
+
+
+
+.grocery-list {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 1rem;
+  font-size: 24px;
+}
+
+.grocery-list ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10%;
+}
+
+.grocery-list .item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgb(201, 217, 242);
+
+}
+
+.grocery-list input[type="checkbox"] {
+  margin-right: 0.5rem;
+  transform: scale(2);
+  outline: none;
+  padding: 20px;
+}
+
+.grocery-list label {
+  flex-grow: 1;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.grocery-list label.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.grocery-list .delete-icon {
+  cursor: pointer;
+  font-size: 18px;
+  color: #888;
+  scale: 1.5;
+}
+
+.grocery-list .delete-icon:hover {
+  color: #ff0000;
+}
+.grocery-list .delete-icon:focus {
+  outline: none;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.counter {
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 12px;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopping-cart {
+  position: absolute;
+  top: 25px;
+  right: 60px;
+  scale: 1.5;
+}
+
+.counter {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+}
+
+h1 {
+  text-align: center;
+}
+
+
+.shopping-cart:hover .selected-items {
+  display: block;
+}
+
+.selected-items {
+  display: none;
+  position: absolute;
+  top: 30px;
+  right: -10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  list-style: none;
+  text-align: left;
+}
+.shopping-cart:hover .selected-items {
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #6d7985;
+  padding: 8px 12px;
+  border-radius: 4px;
+  display: inline-block;
+  width: 300px; /* Set the initial width */
+}
+
+@media screen and (max-width: 768px) {
+  .shopping-cart:hover .selected-items {
+    width: 100%; /* Set the width to 100% on smaller screens */
+  }
+}
+.selected-items li {
+  margin-bottom: 5px;
+}
+
+/*add item style*/
+
+.AddForm {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Added */
+  max-width: 75%;
+  margin-top: 20px;
+  margin: 0 17%;
+  padding: 1rem;
+  width: 100%;
+  
+}
+
+
+
+.AddForm input {
+  width: 70%;
+  scale: 1.5;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.AddForm button {
+  scale: 1.5;
+  margin-left: 18%;
+  padding: 6px 10px;
+
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.AddForm button:hover {
+  background-color: #0056b3;
+}
+
+.AddForm button:focus {
+  outline: none;
+}
+
+/* search style */
+
+.searchForm{
+  margin-right: 25px;
+  margin-bottom: 1rem;
+}
+.searchForm input {
+  width: 55.59%;
+  scale: 1.5;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-top: 2% ;
+  margin-left: 0;
+}
+
